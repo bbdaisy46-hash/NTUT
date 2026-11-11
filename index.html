@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#0f172a">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+  <title>北科圖書館｜座位預約</title>
+  <link rel="icon" href="./assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="./styles.css">
+  <script defer src="./config.js"></script>
+  <script defer src="./vendor/supabase.js"></script>
+  <script defer src="./app.js"></script>
+</head>
+<body>
+  <a class="skip" href="#main">跳至主要內容</a>
+  <header><div class="top"><a class="brand" href="#home">▤ 北科圖書館</a><nav aria-label="主選單"><a href="#floor-zone">座位預約</a><a href="#my-reservations">我的預約</a><button data-action="rules" class="text">使用規則</button></nav><div id="account"></div></div></header>
+  <div id="steps"></div>
+  <div id="notice" role="status" aria-live="polite"></div>
+  <main id="main" tabindex="-1"></main>
+  <footer>座位預約系統 · 時間皆為臺灣時間（UTC+8）<span id="connection"></span></footer>
+  <dialog id="modal" aria-labelledby="dialog-title"></dialog>
+  <noscript>此網站需要啟用 JavaScript 才能查詢及預約座位。</noscript>
+</body>
+</html>
